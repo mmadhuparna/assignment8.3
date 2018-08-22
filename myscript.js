@@ -11,7 +11,7 @@ function multiplicationTable()
 		print.innerHTML += (num + " x " + i + " = " + num*i ) + "<br/>"  //printing output in design view
 		}
 		if(i==10){
-			print.innerHTML += (num + " x " + i + " = " + num*i + "<br/>" ) + "<br/>" //to skip a line between two output
+			print.innerHTML += (num + " x " + i + " = " + num*i + "<br/>" ) + "<br/>" //to skip a line between two lines
 		}
         console.log(num + " x " + i + " = " + num*i);   //showing output in console
 	}
