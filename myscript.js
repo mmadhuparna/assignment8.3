@@ -1,5 +1,6 @@
 //creating function
-function multiplicationTable(){
+function multiplicationTable()
+{
 	var num;
 	num=Number(document.getElementById('inputNumber').value); //initiating variable with the user input value
 	console.log("multiplication tables of" + " " + num); 
@@ -10,9 +11,8 @@ function multiplicationTable(){
 		print.innerHTML += (num + " x " + i + " = " + num*i ) + "<br/>"  //printing output in design view
 		}
 		if(i==10){
-			print.innerHTML += (num + " x " + i + " = " + num*i + "<br/>" ) + "<br/>"
+			print.innerHTML += (num + " x " + i + " = " + num*i + "<br/>" ) + "<br/>" //to skip a line between two output
 		}
         console.log(num + " x " + i + " = " + num*i);   //showing output in console
 	}
-	
 }
