@@ -6,7 +6,13 @@ function multiplicationTable(){
 	for(var i=1; i<=10; i++)
 	{
 		var print= document.getElementById('Print');
-		print.innerHTML += (num + " x " + i + " = " + num*i) + "<br/>" //printing output in design view
-		console.log(num + " x " + i + " = " + num*i);   //showing output in console
+		if(i <= 9){
+		print.innerHTML += (num + " x " + i + " = " + num*i ) + "<br/>"  //printing output in design view
+		}
+		if(i==10){
+			print.innerHTML += (num + " x " + i + " = " + num*i + "<br/>" ) + "<br/>"
+		}
+        console.log(num + " x " + i + " = " + num*i);   //showing output in console
 	}
+	
 }
